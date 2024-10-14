@@ -16,17 +16,22 @@
                     <div class="npts">
                         <h2>Entrar</h2>
                         <div class="nptsIndv">
-                            <p>Email ou número de celular</p>
-                            <input type="email" name="email" id="emailEntrada" required>
+                            <label for="email">
+                                <span>Email ou número de celular</span>
+                                <input type="email" name="email" id="emailEntrada" required autocomplete="off">
+                            </label>
                         </div>
 
                         <div class="nptsIndv">
-                            <p>Senha</p>
-                            <input type="password" name="senha" id="senhaEntrada" required>    
-                        </div>
-                        <button>Entrar</button>
+                            <label for="senha">
+                                <span>Senha</span>
+                                <input type="password" name="senha" id="senhaEntrada" required autocomplete="off">
+                            </label>
+                        </div>    
                     </div>
-                    OU
+                    <button>Entrar</button>
+                    <p>OU</p>
+                    <button id="codAccess">Usar um código de acesso</button>
                 </div>
             </div>
         </div>
