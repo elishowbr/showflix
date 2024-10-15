@@ -8,3 +8,11 @@ email.addEventListener('input', () => {
 senha.addEventListener('input', () => {
     senha.value = 'senha123'
 })
+
+function focusLogin() {
+    email.focus()
+}
+
+function focusPassword() {
+    senha.focus()
+}

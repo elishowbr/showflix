@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Showflix</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <div class="intro">
-            <div class="hdr">
-                <h2>Showflix</h2>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <div class="hdr">
+        <img src="./resources/logo.png" alt="logo" />
+      </div>
+      <div class="intromain">
+        <div class="mainlgn">
+          <div class="npts">
+            <h1>Entrar</h1>
+            <div class="nptsIndv" onclick="focusLogin()">
+              <label for="email">
+                <span>Email ou número de celular</span>
+                <input
+                  type="email"
+                  name="email"
+                  id="emailEntrada"
+                  required
+                  autocomplete="off"
+                />
+              </label>
             </div>
-            <div class="intromain">
-                <div class="mainlgn">
-                    <div class="npts">
-                        <h2>Entrar</h2>
-                        <div class="nptsIndv">
-                            <label for="email">
-                                <span>Email ou número de celular</span>
-                                <input type="email" name="email" id="emailEntrada" required autocomplete="off">
-                            </label>
-                        </div>
 
-                        <div class="nptsIndv">
-                            <label for="senha">
-                                <span>Senha</span>
-                                <input type="password" name="senha" id="senhaEntrada" required autocomplete="off">
-                            </label>
-                        </div>    
-                    </div>
-                    <button>Entrar</button>
-                    <p>OU</p>
-                    <button id="codAccess">Usar um código de acesso</button>
-                </div>
+            <div class="nptsIndv">
+              <label for="senha">
+                <span>Senha</span>
+                <input
+                  type="password"
+                  name="senha"
+                  id="senhaEntrada"
+                  required
+                  autocomplete="off"
+                />
+              </label>
             </div>
+          </div>
+          <div class="nptsExtra">
+            <button>Entrar</button>
+            <p>OU</p>
+            <button id="codAccess">Usar um código de acesso</button>
+            <a href="">Esqueceu sua senha?</a>
+          </div>
+          <div class="remember">
+            <label for="remember">
+              <input type="checkbox" name="remember" id="remember" />
+              Lembrar de mim?</label>
+          </div>
+          <div class="signIn">
+           <label for="signIn">Novo por aqui? <a href="signIn">Assine agora.</a></label>
+          </div>
+          <p>&copy; Elishow alguns os direitos reservados.</p>
         </div>
-        <script src="script.js"></script>
-</body>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
